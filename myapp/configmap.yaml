@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: group2-app-config
+data:
+  bucket: "finalprojectgroup2"
+  background-img: "pictureone.webp"
+  groupname: "Group2"

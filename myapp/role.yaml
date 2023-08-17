@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: CLO835-final-group2
+  namespace: final
+rules:
+  - apiGroups: [""]
+    resources: ["namespaces"]
+    verbs: ["create", "get", "list"]

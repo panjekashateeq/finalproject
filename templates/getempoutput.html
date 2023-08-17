@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{group_name}}</title>
+</head>
+<center>
+	<font color="black" size="5" style="font-family: avenir">
+
+		<h1 style="color: DodgerBlue">Employee Information</h1>
+
+		<body style="background-image: url({{image}}); background-size: cover;">
+
+			<form>
+
+				<div>
+
+			  		<p style="color: white">Employee ID:</p><br> <p style="color: white"> {{ id }}</p> <br><br>
+
+			  		<p style="color: white">First Name:</p><br> <p style="color: white"> {{ fname }}</p> <br><br>
+
+			  		<p style="color: white">Last Name:</p><br> <p style="color: white"> {{ lname }}</p> <br><br>
+
+			  		<p style="color: white">Primary Interest:</p><br> <p style="color: white"> {{ interest }}</p> <br><br>
+
+			  		<p style="color: white">Location:</p><br> <p style="color: white"> {{ location }}</p> <br><br>
+			  		
+			  	</div>
+
+			</form>
+			<a href="{{ url_for('home') }}">Back</a>
+		</body>
+
+	</font>
+</center>
+</html>

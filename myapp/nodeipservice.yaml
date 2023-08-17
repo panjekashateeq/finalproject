@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: group2-node-service
+  labels:
+    app: group2
+spec:
+  selector:
+    app: group2
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 81
+      targetPort: 81
+      nodePort: 30000
